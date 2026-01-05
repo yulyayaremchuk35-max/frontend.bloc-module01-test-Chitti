@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "Lato";
+    src: local('Lato Regular'), local('Lato-Regular'), url(../fonts/lato/latoregular.woff2") format('woff2'), url('../fonts/lato/latoregular.woff') format('woff'), url('../fonts/lato/latoregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+:root {
+    --lato: "Lato",sans-serif;
+    --nunito-sans:"Nunito Sans",sans-serif; 
+
+    --accent: linear-gradient(90deg,#ff323f 0%,#FF37E4 100%);
+    --light: #FFFFFF;
+}
+body {
+ 
+   font-family: var(--font-lato);
+   background-color:#333 ;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100% ;
+max-width: 1600px;
+padding: 15px 25px;
+box-sizing: border-box ;
+background-color: var(--light);
+border-radius: 16px; 
+
+}
+.logo {
+    display: block;
+    width:105px ;
+    height: 30px;
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nav {
+    display: flex;
+    gap: 40px;
+    font-size:14px ;
+    color: #333;
+}
+.btn-accent  {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 20px 18px;
+    font-family: var(--font-nunito);  
+    font-size: 16px;
+    font-weight: 900;
+    background: linear-gradient(90deg,#ff323f 0%,#FF37E4 100%);
+    border-radius: 16px;
+    color: #fff;
+    
+}
+.btn-accent::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-image:url(../images/btn-icon.svg) ;
+    background-size: contain;
+
+}
